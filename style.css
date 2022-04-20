@@ -51,10 +51,19 @@ a{
 .cabecera__lista{
     padding: 1rem 0rem 1rem 0rem;
 }
+
+
 .cabecera__lista li{
     display: inline-block;
     margin: 10px;
     font-family: poppins-extralight;
+    transition: all 1s;
+    
+}
+.cabecera__lista li:hover{
+    transform: scale(1.3);
+    background-image: linear-gradient(red, blue);
+    
 }
 @media only screen and (max-width: 1200px) {
     .cabecera{
@@ -94,6 +103,8 @@ a{
     }
     
 }
+
+
 
     /*Fin de Cabecera*/
 
