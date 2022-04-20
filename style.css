@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Tipografias*/
+@font-face{
+    font-family: poppins-extralight;
+    src: url(./tipografias/MuseoSans-300.otf);
+}
+@font-face{
+    font-family: jersey_m54;
+    src: url(./tipografias/Jersey_M54[1].ttf);
+}
+@font-face{
+    font-family: museosans_500;
+    src: url(./tipografias/MuseoSans_500_Italic.otf);
+}
+@font-face{
+    font-family: museosans_100;
+    src: url(./tipografias/MuseoSans-100.otf);
+}
+@font-face{
+    font-family: museosans_900;
+    src: url(./tipografias/MuseoSans_1.otf)
+}
+
+
+    /*Inicio de Cabecera*/
+
+.cabecera{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cabecera__logo{
+    width: 80px;
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.cabecera__navegador{
+    display: inline-block;
+    list-style: none;
+    
+}
+.cabecera__lista{
+    padding: 1rem 0rem 1rem 0rem;
+}
+.cabecera__lista li{
+    display: inline-block;
+    margin: 10px;
+    font-family: poppins-extralight;
+}
+@media only screen and (max-width: 1200px) {
+    .cabecera{
+        grid-template-columns: 100%;
+        justify-items: center;
+        
+    }
+    .cabecera__lista{
+        background-color: black;
+        border-radius: 10px;
+    }
+
+    
+    
+}
+@media only screen and (max-width: 768px) {
+    .cabecera{
+        grid-template-columns: 100%;
+        justify-items: center;
+        
+    }
+    .cabecera__lista{
+        background-color: black;
+        border-radius: 10px;
+    }
+    
+}
+@media only screen and (max-width: 320px) {
+    .cabecera{
+        grid-template-columns: 100%;
+        justify-items: center;
+        
+    }
+    .cabecera__lista{
+        background-color: black;
+        border-radius: 10px;
+    }
+    
+}
+
+    /*Fin de Cabecera*/
+
+    /*Inicio del Cuerpo Index*/
+
+.cuerpo{
+    background-image: url(./imagen/imageninicio.jpg);
+    background-repeat: no-repeat;
+    background-position: center top ;
+    background-size: cover;
+    height: 950px;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+   .cuerpo{
+       height: auto;
+   }
+}
+@media only screen and (max-width: 320px) {
+    .cuerpo{
+        height: auto;
+    }
+}    
+
+.cuerpo__text1 p{
+    color: white ;
+    font-size: 50px;
+    font-family: jersey_m54;
+    
+    
+}
+.cuerpo__text2 p{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    
+    text-align: center;
+    align-items: center;
+}
+
+
+.cuerpo__text3 a{
+    background-color: #FECF07;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+    /*Fin del Cuerpo Index*/
+
+    /*Nosotros Cuerpo*/
+
+.cuerponosotros{
+    background-color: rgb(254, 248, 240);
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+    
+   
+}
+
+
+.main__imagen{
+    height: 50rem;
+    align-items: center;
+    justify-items: center;
+    
+}
+@media only screen and (max-width: 768px) {
+    .cuerponosotros{
+        background-color: rgb(254, 248, 240);
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+        justify-items: flex-start;
+        align-items: flex-end;
+        
+    }
+    
+}
+.container__nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+.nosotros__titulo{
+    color: #FECF07;
+    font-family: museosans_900;
+    border-bottom: solid 1px #FECF07;
+    align-self: flex-start;
+    justify-self: flex-end;
+    margin: 10px;
+    
+}
+.nosotros__titulo--texto{
+    font-family: museosans_100 ;
+    margin-left: 1rem;
+    
+}
+.nosotros__imagen--compromiso{
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+}
+.nosotros__text--compromiso{
+    font-family: museosans_500;
+    align-self: center;
+}
+
+
+.nosotros__imagen--calidad{
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+}
+
+.nosotros__text--calidad{
+    font-family: museosans_500;
+    align-items: center;
+    margin: 0rem ;
+    align-self: center;
+    
+}
+.nosotros__imagen--fabrica{
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+}
+.nosotros__text--fabrica{
+    align-self: center;
+    font-family: museosans_500;
+}
+.nosotros__imagen--entrega{
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+}
+.nosotros__text--entrega{
+    align-self: center;
+    font-family: museosans_500;
+}
+    /* Fin Nosotros Cuerpo*/
+
+    /*Modelos cuerpo*/
+
+.modelos__cuerpo{
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr ;
+    justify-items: center;
+    align-items: center;
+}
+
+.modelos__titulo{
+    margin-right: 55rem;
+    color: #FECF07;
+    font-family: museosans_900;
+    border-bottom: solid 4px #FECF07 ;
+}
+.modelos__img--rayas{
+    width: 360px;
+    margin-left: 40rem;
+    
+}
+.modelos__img--revesitimiento{
+   width: 30rem;
+   height: 40rem;
+   margin: 0rem 5rem 0rem 0rem;
+}
+.modelos__img--equipamiento{
+    width: 30rem;
+   height: 40rem;
+}
+    /*FIN de Modelos*/
+
+    /*Viviendas Cuerpo*/
+    .viviendas__cuerpo{
+        background-color: rgb(254, 248, 240);
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .container__viviendas{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .viviendas__titulo{
+        color: #FECF07;
+        font-family: museosans_900;
+        border-bottom: solid 4px #FECF07 ;
+        margin-right: 20rem;
+        margin-bottom: 12rem;
+        
+    }
+    @media only screen and (max-width: 768px) {
+        .viviendas__cuerpo{
+            grid-template-columns: 1fr;
+        }
+        .viviendas__titulo{
+            margin-top: 1rem;
+        }
+        
+    }
+   .viviendas__text1{
+        font-family: jersey_m54;
+        font-size: 40px;
+        margin-bottom: 10rem;
+   }
+
+   .viviendas__text2{
+    font-family: museosans_100;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10rem;
+    }
+
+   .viviendas__imagen{
+       width: 750px;
+   }
+
+
+
+    /*Fin del cuerpo de Nosotros*/
+
+    /*Contacto cuerpo*/
+
+.cuerpo__contacto{
+    display: grid;
+    background-color: white;
+    height: auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.contacto__titulo{
+    color: #FECF07 ;
+    border-bottom: solid 4px #FECF07  ;
+    font-family: museosans_900;
+    margin: 1rem 0rem;
+
+}
+.contacto__titulo--texto{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: museosans_900;
+
+}
+.contacto__img--ubicacion{
+    width: 100px;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    margin-left: 3rem;
+    
+}
+.contacto__ubicacion--text{
+    
+}
+.contacto__img--email{
+    width: 100px;
+    margin-bottom: -1rem;
+    
+}
+.contacto__email--text{
+    text-align: center;
+    margin-left: -1rem;
+    margin-bottom: 2rem;
+}
+.contacto__consulta{
+    font-family: museosans_900;
+    border-bottom: solid 4px #FECF07 ;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.contacto__formulario{
+    font-family: museosans_500;
+    font-weight: 700;
+    
+    
+}
+.contacto__enviar{
+    margin-left: 4.5rem;
+    
+}
+.formulario__nombre{
+    margin-left: 2rem;
+}
+.formulario__input{
+    height: 1rem;
+    width: 12rem;
+}
+.formulario__email{
+    margin-left: 4.5rem;
+}
+.formulario__mensaje{
+    margin-left: 4rem;   
+}
+.textarea{
+    height: 2rem;
+}
+
+
+
+
+
+    /*Inicio Pie de Pagina*/
+
+.piedepagina{
+    background-color: black;
+    display: grid;
+    
+}
+.pie__navegador{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+@media only screen and (max-width:768px) {
+    .pie__navegador{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto ;
+    }
+}
+.pie__link1{
+    color: white;
+    
+    
+}
+.pie__titulo1{
+    font-family: museosans_500;
+    color: #FECF07;
+    margin: .5rem;
+
+}
+.titulo1__texto{
+    font-family: museosans_100;
+    margin: .5rem;
+    
+}
+.pie__link2{
+    color: white;
+
+    
+}
+.pie__link3{
+    color: white;
+    margin: .5rem;
+    
+}
+ul li{
+    list-style: none;
+}
+.listas__redsocial{
+    display: flex;
+    margin: .5rem;
+}
+.lista__instagram{
+    margin: .5rem;
+}
+.lista__facebook{
+   margin: .5rem;
+}
+.pie__titulo2{
+    font-family: museosans_500;
+    color: #FECF07;
+    margin: .5rem;
+}
+.titulo2__texto1{
+    font-family: museosans_100;
+    margin: .5rem;
+}
+.titulo2__texto2{
+    font-family: museosans_100;
+    margin: .5rem;
+   
+}
+.pie__titulo3{
+    font-family: museosans_500;
+    color: #FECF07;
+    
+}
+.mapa{
+    margin: .5rem;
+}
+    /*Fin de Pie de pagina*/
